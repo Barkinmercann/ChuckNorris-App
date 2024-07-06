@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Abf-Yp-uAy">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories-->
+        <scene sceneID="wN6-Pp-44t">
+            <objects>
+                <tableViewController id="iZj-ua-Osa" customClass="CategoryTableViewController" customModule="ChuckNorrisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="D3g-C1-MXI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.72048163659793807" green="0.60869629406334091" blue="0.44881496170177898" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="BhX-Jp-At9" customClass="CategoryTableViewCell" customModule="ChuckNorrisApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="42.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BhX-Jp-At9" id="0YN-S4-N8F">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="42.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwN-d9-iVz">
+                                            <rect key="frame" x="20" y="11.000000000000002" width="353" height="20.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kwN-d9-iVz" secondAttribute="trailing" id="E07-I1-WMw"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kwN-d9-iVz" secondAttribute="bottom" id="IBc-6b-Ad5"/>
+                                        <constraint firstItem="kwN-d9-iVz" firstAttribute="leading" secondItem="0YN-S4-N8F" secondAttribute="leadingMargin" id="Qnb-r3-Sc1"/>
+                                        <constraint firstItem="kwN-d9-iVz" firstAttribute="top" secondItem="0YN-S4-N8F" secondAttribute="topMargin" id="ooL-17-0VF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoriesTextLabel" destination="kwN-d9-iVz" id="0dZ-cV-orA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iZj-ua-Osa" id="IEA-Qu-BSR"/>
+                            <outlet property="delegate" destination="iZj-ua-Osa" id="6kO-hX-gcx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Categories" id="Eex-Vl-D5G"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="categoriesToSelectedCategory" id="08M-Mg-ChY"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weh-Mo-T7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710" y="24"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="0yi-Fb-6bZ">
+            <objects>
+                <viewController id="Abf-Yp-uAy" customClass="SplashViewController" customModule="ChuckNorrisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qhh-iR-bjL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7s-Yn-Inv" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="34" y="264" width="325" height="325"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j7s-Yn-Inv" secondAttribute="height" multiplier="1:1" id="3xE-QU-8SG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="cowboyHat-animation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-L2-9DQ">
+                                <rect key="frame" x="50" y="704" width="293" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="bXB-h2-an8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Let's Start">
+                                    <color key="baseForegroundColor" red="0.33521262889999998" green="0.28320317210000001" blue="0.20881648550000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.33521262889999998" green="0.19676292200000001" blue="0.21314023409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="Abf-Yp-uAy" eventType="touchUpInside" id="c8Z-Wx-Udb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xRN-na-55I"/>
+                        <color key="backgroundColor" red="0.72048163659793807" green="0.60869629406334091" blue="0.44881496170177898" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xRN-na-55I" firstAttribute="bottom" secondItem="l6S-L2-9DQ" secondAttribute="bottom" constant="59" id="5X1-yd-d3z"/>
+                            <constraint firstItem="j7s-Yn-Inv" firstAttribute="top" secondItem="xRN-na-55I" secondAttribute="top" constant="205" id="8HJ-sg-Mp2"/>
+                            <constraint firstItem="j7s-Yn-Inv" firstAttribute="centerX" secondItem="xRN-na-55I" secondAttribute="centerX" id="XPv-DP-iuS"/>
+                            <constraint firstItem="l6S-L2-9DQ" firstAttribute="centerX" secondItem="j7s-Yn-Inv" secondAttribute="centerX" id="bO0-Je-uXN"/>
+                            <constraint firstItem="l6S-L2-9DQ" firstAttribute="leading" secondItem="xRN-na-55I" secondAttribute="leading" constant="50" id="fH3-CP-oBe"/>
+                            <constraint firstItem="j7s-Yn-Inv" firstAttribute="centerY" secondItem="xRN-na-55I" secondAttribute="centerY" constant="-12" id="tJD-Bd-OwG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="j7s-Yn-Inv" id="a2M-WU-cgR"/>
+                        <outlet property="startButton" destination="l6S-L2-9DQ" id="Roa-wu-iqs"/>
+                        <segue destination="zbq-AW-aEH" kind="show" identifier="enterTheApp" id="u0j-Pe-uMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBg-sm-eLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2547.3282442748091" y="23.943661971830988"/>
+        </scene>
+        <!--Initial Navigation Controller-->
+        <scene sceneID="f0t-px-U1K">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="zbq-AW-aEH" customClass="InitialNavigationController" customModule="ChuckNorrisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TKT-UX-1bc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="CIN-nS-7fE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iZj-ua-Osa" kind="relationship" relationship="rootViewController" id="k6H-y0-4HE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zN-Dd-Lvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1615" y="24"/>
+        </scene>
+        <!--Fact View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FactViewController" customModule="ChuckNorrisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HT-eu-eFK">
+                                <rect key="frame" x="196.66666666666666" y="303" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn5-l0-29T">
+                                <rect key="frame" x="118.66666666666669" y="624" width="156" height="34.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Random Fact"/>
+                                <connections>
+                                    <action selector="getRandomFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JgM-Qx-i8b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2HT-eu-eFK" secondAttribute="trailing" constant="16" id="CHs-vj-7hL"/>
+                            <constraint firstItem="2HT-eu-eFK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fak-Pb-Zm7"/>
+                            <constraint firstItem="qn5-l0-29T" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.35" id="KFZ-bl-IJG"/>
+                            <constraint firstItem="qn5-l0-29T" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2HT-eu-eFK" secondAttribute="bottom" constant="12" id="UJU-De-DoY"/>
+                            <constraint firstItem="2HT-eu-eFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="303" id="ayn-AV-Rqv"/>
+                            <constraint firstItem="2HT-eu-eFK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="okO-d8-17m"/>
+                            <constraint firstItem="qn5-l0-29T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xRQ-q2-N2J"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UJU-De-DoY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="P4F-Ba-OJQ"/>
+                    <connections>
+                        <outlet property="textLabel" destination="2HT-eu-eFK" id="dBs-mh-Mqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
