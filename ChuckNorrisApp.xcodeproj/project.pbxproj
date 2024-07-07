@@ -95,20 +95,20 @@
 			isa = PBXGroup;
 			children = (
 				DA6AEB422C369ECD006B84B7 /* Main.storyboard */,
-				DA23DC042C3832B200EFA729 /* 0.Categories */,
-				DA23DC082C3833CB00EFA729 /* 1.Facts */,
-				DA0C6F862C396D7F00D4E95A /* SplashViewController.swift */,
+				DAB3F8522C3B0D1F0008627F /* 0.Splash */,
+				DA23DC042C3832B200EFA729 /* 1.Categories */,
+				DA23DC082C3833CB00EFA729 /* 2.Facts */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		DA23DC042C3832B200EFA729 /* 0.Categories */ = {
+		DA23DC042C3832B200EFA729 /* 1.Categories */ = {
 			isa = PBXGroup;
 			children = (
 				DABE2E592C37FADA00CB8C4C /* CategoryTableViewController.swift */,
 				DA23DC052C3832D900EFA729 /* Cell */,
 			);
-			path = 0.Categories;
+			path = 1.Categories;
 			sourceTree = "<group>";
 		};
 		DA23DC052C3832D900EFA729 /* Cell */ = {
@@ -137,12 +137,12 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
-		DA23DC082C3833CB00EFA729 /* 1.Facts */ = {
+		DA23DC082C3833CB00EFA729 /* 2.Facts */ = {
 			isa = PBXGroup;
 			children = (
 				DA6AEB402C369ECD006B84B7 /* FactViewController.swift */,
 			);
-			path = 1.Facts;
+			path = 2.Facts;
 			sourceTree = "<group>";
 		};
 		DA6AEB302C369ECD006B84B7 = {
@@ -173,6 +173,14 @@
 				DA6AEB4A2C369ECF006B84B7 /* Info.plist */,
 			);
 			path = ChuckNorrisApp;
+			sourceTree = "<group>";
+		};
+		DAB3F8522C3B0D1F0008627F /* 0.Splash */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C6F862C396D7F00D4E95A /* SplashViewController.swift */,
+			);
+			path = 0.Splash;
 			sourceTree = "<group>";
 		};
 		DC98BD4B67EAD1BBF3A5CA46 /* Pods */ = {
