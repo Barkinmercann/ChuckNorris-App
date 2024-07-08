@@ -20,7 +20,7 @@
 		DA6AEB532C36A3A4006B84B7 /* ChuckNorrisFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */; };
 		DA6AEB552C36B401006B84B7 /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB542C36B401006B84B7 /* SearchParameters.swift */; };
 		DABE2E562C37F51000CB8C4C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */; };
-		DABE2E5A2C37FADA00CB8C4C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E592C37FADA00CB8C4C /* CategoryTableViewController.swift */; };
+		DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFact.swift; sourceTree = "<group>"; };
 		DA6AEB542C36B401006B84B7 /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
 		DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		DABE2E592C37FADA00CB8C4C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 		DA23DC042C3832B200EFA729 /* 1.Categories */ = {
 			isa = PBXGroup;
 			children = (
-				DABE2E592C37FADA00CB8C4C /* CategoryTableViewController.swift */,
 				DA23DC052C3832D900EFA729 /* Cell */,
+				DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */,
 			);
 			path = 1.Categories;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 				DA0C6F872C396D7F00D4E95A /* SplashViewController.swift in Sources */,
 				DA6AEB552C36B401006B84B7 /* SearchParameters.swift in Sources */,
 				DABE2E562C37F51000CB8C4C /* CategoryTableViewCell.swift in Sources */,
-				DABE2E5A2C37FADA00CB8C4C /* CategoryTableViewController.swift in Sources */,
+				DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */,
 				DA6AEB3D2C369ECD006B84B7 /* AppDelegate.swift in Sources */,
 				DA6AEB3F2C369ECD006B84B7 /* SceneDelegate.swift in Sources */,
 			);
