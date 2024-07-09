@@ -32,7 +32,7 @@ class SplashViewController: UIViewController {
     }
 
     @IBAction func startButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "enterTheApp", sender: self)
+        self.performSegue(withIdentifier: AppConstants.Segue.enterTheApp, sender: self)
     }
     
     
