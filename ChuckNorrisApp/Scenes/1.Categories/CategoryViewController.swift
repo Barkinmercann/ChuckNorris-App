@@ -8,10 +8,20 @@
 import Foundation
 import UIKit
 
-class CategoryTableViewController: UITableViewController {
+class CategoryViewController: UIViewController {
     
     var categoriesArray: [String]?
     var selectedCategory: String?
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,22 +34,30 @@ class CategoryTableViewController: UITableViewController {
                                               message: error,
                                               preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default))
-
+                
                 self.present(alert, animated: true)
             }
             self.tableView.reloadData()
         }
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? FactViewController {
+            destinationVC.selectedCategory = selectedCategory
+        }
+    }
+}
+
+extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoriesArray?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let categoryCell = tableView.dequeueReusableCell(withIdentifier: "categoryCell",
                                                                for: indexPath) as? CategoryTableViewCell else { return UITableViewCell() }
         
@@ -47,14 +65,8 @@ class CategoryTableViewController: UITableViewController {
         return categoryCell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCategory = categoriesArray?[indexPath.row]
         performSegue(withIdentifier: "categoriesToSelectedCategory", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationVC = segue.destination as? FactViewController {
-            destinationVC.selectedCategory = selectedCategory
-        }
     }
 }
