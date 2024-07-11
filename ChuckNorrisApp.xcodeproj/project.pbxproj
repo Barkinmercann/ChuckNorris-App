@@ -10,6 +10,7 @@
 		293AA756350F5ECEF3C5BA46 /* Pods_ChuckNorrisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAC4EC309E669C72B59448C /* Pods_ChuckNorrisApp.framework */; };
 		DA0C6F872C396D7F00D4E95A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C6F862C396D7F00D4E95A /* SplashViewController.swift */; };
 		DA0C6F8A2C39752F00D4E95A /* cowboyHat-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DA0C6F892C39752F00D4E95A /* cowboyHat-animation.json */; };
+		DA2D5B2D2C3FD837001B499A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D5B2C2C3FD837001B499A /* UserManager.swift */; };
 		DA6AEB3D2C369ECD006B84B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB3C2C369ECD006B84B7 /* AppDelegate.swift */; };
 		DA6AEB3F2C369ECD006B84B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB3E2C369ECD006B84B7 /* SceneDelegate.swift */; };
 		DA6AEB412C369ECD006B84B7 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB402C369ECD006B84B7 /* FactViewController.swift */; };
@@ -19,6 +20,7 @@
 		DA6AEB512C36A0FA006B84B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB502C36A0FA006B84B7 /* NetworkManager.swift */; };
 		DA6AEB532C36A3A4006B84B7 /* ChuckNorrisFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */; };
 		DA6AEB552C36B401006B84B7 /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB542C36B401006B84B7 /* SearchParameters.swift */; };
+		DA7E4C642C3D2E5F00D607E4 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E4C632C3D2E5F00D607E4 /* AppConstants.swift */; };
 		DABE2E562C37F51000CB8C4C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */; };
 		DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,7 @@
 		3EAC4EC309E669C72B59448C /* Pods_ChuckNorrisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C6F862C396D7F00D4E95A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DA0C6F892C39752F00D4E95A /* cowboyHat-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cowboyHat-animation.json"; sourceTree = "<group>"; };
+		DA2D5B2C2C3FD837001B499A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		DA6AEB392C369ECD006B84B7 /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6AEB3C2C369ECD006B84B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6AEB3E2C369ECD006B84B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		DA6AEB502C36A0FA006B84B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFact.swift; sourceTree = "<group>"; };
 		DA6AEB542C36B401006B84B7 /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
+		DA7E4C632C3D2E5F00D607E4 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,7 @@
 				DA6AEB3C2C369ECD006B84B7 /* AppDelegate.swift */,
 				DA6AEB3E2C369ECD006B84B7 /* SceneDelegate.swift */,
 				DA6AEB472C369ECF006B84B7 /* LaunchScreen.storyboard */,
+				DA2D5B2C2C3FD837001B499A /* UserManager.swift */,
 			);
 			path = ApplicationLifeCycle;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 		DA6AEB3B2C369ECD006B84B7 /* ChuckNorrisApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA7E4C622C3D2E4B00D607E4 /* AppConstants */,
 				DA23DC012C3831F200EFA729 /* Assets */,
 				DA23DC022C38320E00EFA729 /* ApplicationLifeCycle */,
 				DA23DC062C38335E00EFA729 /* Network */,
@@ -173,6 +179,14 @@
 				DA6AEB4A2C369ECF006B84B7 /* Info.plist */,
 			);
 			path = ChuckNorrisApp;
+			sourceTree = "<group>";
+		};
+		DA7E4C622C3D2E4B00D607E4 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E4C632C3D2E5F00D607E4 /* AppConstants.swift */,
+			);
+			path = AppConstants;
 			sourceTree = "<group>";
 		};
 		DAB3F8522C3B0D1F0008627F /* 0.Splash */ = {
@@ -317,6 +331,8 @@
 				DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */,
 				DA6AEB3D2C369ECD006B84B7 /* AppDelegate.swift in Sources */,
 				DA6AEB3F2C369ECD006B84B7 /* SceneDelegate.swift in Sources */,
+				DA2D5B2D2C3FD837001B499A /* UserManager.swift in Sources */,
+				DA7E4C642C3D2E5F00D607E4 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
