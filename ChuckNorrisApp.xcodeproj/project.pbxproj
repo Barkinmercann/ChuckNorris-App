@@ -20,6 +20,8 @@
 		DA6AEB512C36A0FA006B84B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB502C36A0FA006B84B7 /* NetworkManager.swift */; };
 		DA6AEB532C36A3A4006B84B7 /* ChuckNorrisFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */; };
 		DA6AEB552C36B401006B84B7 /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AEB542C36B401006B84B7 /* SearchParameters.swift */; };
+		DA7893622C3FFEC4008D9C20 /* BottomInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7893612C3FFEC4008D9C20 /* BottomInfoView.xib */; };
+		DA7893642C3FFF58008D9C20 /* BottomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7893632C3FFF58008D9C20 /* BottomInfoView.swift */; };
 		DA7E4C642C3D2E5F00D607E4 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E4C632C3D2E5F00D607E4 /* AppConstants.swift */; };
 		DABE2E562C37F51000CB8C4C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */; };
 		DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */; };
@@ -43,6 +45,8 @@
 		DA6AEB502C36A0FA006B84B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DA6AEB522C36A3A4006B84B7 /* ChuckNorrisFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFact.swift; sourceTree = "<group>"; };
 		DA6AEB542C36B401006B84B7 /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
+		DA7893612C3FFEC4008D9C20 /* BottomInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomInfoView.xib; sourceTree = "<group>"; };
+		DA7893632C3FFF58008D9C20 /* BottomInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomInfoView.swift; sourceTree = "<group>"; };
 		DA7E4C632C3D2E5F00D607E4 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DABE2E552C37F51000CB8C4C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		DABE2E592C37FADA00CB8C4C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				DA6AEB422C369ECD006B84B7 /* Main.storyboard */,
+				DA7893612C3FFEC4008D9C20 /* BottomInfoView.xib */,
+				DA7893632C3FFF58008D9C20 /* BottomInfoView.swift */,
 				DAB3F8522C3B0D1F0008627F /* 0.Splash */,
 				DA23DC042C3832B200EFA729 /* 1.Categories */,
 				DA23DC082C3833CB00EFA729 /* 2.Facts */,
@@ -266,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7893622C3FFEC4008D9C20 /* BottomInfoView.xib in Resources */,
 				DA6AEB462C369ECF006B84B7 /* Assets.xcassets in Resources */,
 				DA0C6F8A2C39752F00D4E95A /* cowboyHat-animation.json in Resources */,
 				DA6AEB492C369ECF006B84B7 /* Base in Resources */,
@@ -329,6 +336,7 @@
 				DA6AEB552C36B401006B84B7 /* SearchParameters.swift in Sources */,
 				DABE2E562C37F51000CB8C4C /* CategoryTableViewCell.swift in Sources */,
 				DABE2E5A2C37FADA00CB8C4C /* CategoryViewController.swift in Sources */,
+				DA7893642C3FFF58008D9C20 /* BottomInfoView.swift in Sources */,
 				DA6AEB3D2C369ECD006B84B7 /* AppDelegate.swift in Sources */,
 				DA6AEB3F2C369ECD006B84B7 /* SceneDelegate.swift in Sources */,
 				DA2D5B2D2C3FD837001B499A /* UserManager.swift in Sources */,

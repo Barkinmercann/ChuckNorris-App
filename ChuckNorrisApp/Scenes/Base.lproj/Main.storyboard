@@ -40,15 +40,25 @@
                                     <action selector="startButton:" destination="Abf-Yp-uAy" eventType="touchUpInside" id="c8Z-Wx-Udb"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akR-tX-BDq" customClass="BottomInfoView" customModule="ChuckNorrisApp" customModuleProvider="target">
+                                <rect key="frame" x="193" y="758" width="200" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Jk-rL-2hz"/>
+                                    <constraint firstAttribute="height" constant="60" id="wQr-D4-jEO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xRN-na-55I"/>
                         <color key="backgroundColor" red="0.72048163659793807" green="0.60869629406334091" blue="0.44881496170177898" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="xRN-na-55I" firstAttribute="bottom" secondItem="l6S-L2-9DQ" secondAttribute="bottom" constant="59" id="5X1-yd-d3z"/>
                             <constraint firstItem="j7s-Yn-Inv" firstAttribute="top" secondItem="xRN-na-55I" secondAttribute="top" constant="205" id="8HJ-sg-Mp2"/>
+                            <constraint firstItem="xRN-na-55I" firstAttribute="trailing" secondItem="akR-tX-BDq" secondAttribute="trailing" id="Uyf-4M-MlW"/>
                             <constraint firstItem="j7s-Yn-Inv" firstAttribute="centerX" secondItem="xRN-na-55I" secondAttribute="centerX" id="XPv-DP-iuS"/>
                             <constraint firstItem="l6S-L2-9DQ" firstAttribute="centerX" secondItem="j7s-Yn-Inv" secondAttribute="centerX" id="bO0-Je-uXN"/>
                             <constraint firstItem="l6S-L2-9DQ" firstAttribute="leading" secondItem="xRN-na-55I" secondAttribute="leading" constant="50" id="fH3-CP-oBe"/>
+                            <constraint firstItem="xRN-na-55I" firstAttribute="bottom" secondItem="akR-tX-BDq" secondAttribute="bottom" id="iv5-zP-gxp"/>
                             <constraint firstItem="j7s-Yn-Inv" firstAttribute="centerY" secondItem="xRN-na-55I" secondAttribute="centerY" constant="-12" id="tJD-Bd-OwG"/>
                         </constraints>
                     </view>
@@ -199,9 +209,6 @@
             <point key="canvasLocation" x="233" y="24"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="j7s-Yn-Inv"/>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

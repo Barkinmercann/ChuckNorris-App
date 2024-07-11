@@ -66,9 +66,7 @@ class FactViewController: UIViewController {
     }
     
     @IBAction func getRandomFact(_ sender: UIButton) {
-        if let category = selectedCategory {
-            getRandomFact()
-        }
+        getRandomFact()
     }
     
     @IBAction func saveFactPressed(_ sender: UIButton) {
