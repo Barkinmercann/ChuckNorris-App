@@ -47,7 +47,7 @@ class CategoryViewController: UIViewController {
         }
     }
 }
-
+//MARK: - TableView Extension
 extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -58,15 +58,17 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let categoryCell = tableView.dequeueReusableCell(withIdentifier: "categoryCell",
+        guard let categoryCell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier,
                                                                for: indexPath) as? CategoryTableViewCell else { return UITableViewCell() }
         
-        categoryCell.categoriesTextLabel.text = categoriesArray?[indexPath.row].capitalized
+        if let text = categoriesArray?[indexPath.row].capitalized {
+            categoryCell.configureCell(text: text)
+        }
         return categoryCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCategory = categoriesArray?[indexPath.row]
-        performSegue(withIdentifier: "categoriesToSelectedCategory", sender: nil)
+        performSegue(withIdentifier: AppConstants.Segue.categoriesToSelectedCategory, sender: nil)
     }
 }

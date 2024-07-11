@@ -58,4 +58,19 @@ class NetworkManager {
         }
     }
     
+    func getFact(from factID: String,
+                 completionHandler: @escaping (ChuckNorrisFact?, String?) -> Void) {
+        AF.request("https://api.chucknorris.io/jokes/\(factID)", method: .get)
+            .validate()
+            .responseDecodable(of: ChuckNorrisFact.self) { (response) in
+            if let fact = response.value {
+               completionHandler(fact, nil)
+            } else if let error = response.error {
+                completionHandler(nil, error.errorDescription)
+            } else {
+                completionHandler(nil, "Unknown Error")
+            }
+        }
+    }
+    
 }

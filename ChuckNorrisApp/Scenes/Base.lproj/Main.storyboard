@@ -152,23 +152,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn5-l0-29T">
-                                <rect key="frame" x="118.66666666666669" y="624" width="156" height="34.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="613" width="156" height="34.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Random Fact"/>
                                 <connections>
                                     <action selector="getRandomFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JgM-Qx-i8b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wg-8h-iLQ">
+                                <rect key="frame" x="147.66666666666666" y="707.66666666666663" width="98" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save Fact"/>
+                                <connections>
+                                    <action selector="saveFactPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jui-ou-0g5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2Wg-8h-iLQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5uD-4m-vRs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2HT-eu-eFK" secondAttribute="trailing" constant="16" id="CHs-vj-7hL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Wg-8h-iLQ" secondAttribute="trailing" constant="16" id="EQ4-NP-gEr"/>
                             <constraint firstItem="2HT-eu-eFK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fak-Pb-Zm7"/>
-                            <constraint firstItem="qn5-l0-29T" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.35" id="KFZ-bl-IJG"/>
+                            <constraint firstItem="2Wg-8h-iLQ" firstAttribute="top" secondItem="qn5-l0-29T" secondAttribute="bottom" constant="60" id="SV4-Hz-fK6"/>
                             <constraint firstItem="qn5-l0-29T" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2HT-eu-eFK" secondAttribute="bottom" constant="12" id="UJU-De-DoY"/>
                             <constraint firstItem="2HT-eu-eFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="303" id="ayn-AV-Rqv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Wg-8h-iLQ" secondAttribute="bottom" constant="100" id="knW-gD-rSs"/>
                             <constraint firstItem="2HT-eu-eFK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="okO-d8-17m"/>
+                            <constraint firstItem="2Wg-8h-iLQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vXp-Wr-eEN"/>
                             <constraint firstItem="qn5-l0-29T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xRQ-q2-N2J"/>
                         </constraints>
                         <variation key="default">
@@ -187,6 +199,9 @@
             <point key="canvasLocation" x="233" y="24"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="j7s-Yn-Inv"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
