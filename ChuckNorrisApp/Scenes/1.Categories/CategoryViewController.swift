@@ -21,6 +21,7 @@ class CategoryViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "categoryCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
